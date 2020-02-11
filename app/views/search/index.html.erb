@@ -1,0 +1,10 @@
+<h1><%= search_results.count %> Results</h1>
+
+<% search_results.characters.each do |character| %>
+  <section class='member'>
+    <p class='name'><%= character.name %></p>
+    <p class='role'><%= character.role %></p>
+    <p class='house'><%= character.house %></p>
+    <p class='patronus'><%= character.patronus %></p>
+  </section>
+<% end %>
